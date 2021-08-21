@@ -11,16 +11,16 @@ import CommentApp from './container/CommentApp'
 
 const store = createStore(commentReducer)
 
-    class Index extends Component {
-    render() {
-        return (
-            <Provider store={store}>
-                <CommentApp />
-            </Provider>
+//     class Index extends Component {
+//     render() {
+//         return (
+//             <Provider store={store}>
+//                 <CommentApp />
+//             </Provider>
 
-        )
-    }
-}
+//         )
+//     }
+// }
 ReactDOM.render( <Provider store={store}>
     <CommentApp />
 </Provider>, document.getElementById('root'));
